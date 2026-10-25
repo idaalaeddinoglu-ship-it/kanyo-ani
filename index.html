@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Anime Atlas ile sevdiğin animeleri keşfet, türlere göre göz at ve izleme listeni oluştur.">
+  <title>Anime Atlas — Yeni favorini keşfet</title>
+  <link rel="stylesheet" href="styl.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#anasayfa" aria-label="Anime Atlas ana sayfa"><span class="brand-mark">✦</span> anime<span>atlas</span></a>
+    <nav class="main-nav" aria-label="Ana menü">
+      <a class="nav-link active" href="#anasayfa">Keşfet</a>
+      <a class="nav-link" href="#anime-listesi">Anime listesi</a>
+      <a class="nav-link" href="#hakkimda">Hakkımda</a>
+    </nav>
+    <a class="nav-cta" href="#anime-listesi">Anime bul <span>↗</span></a>
+  </header>
+
+  <main id="anasayfa">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> ANİME DÜNYASINA HOŞ GELDİN</div>
+        <h1>Bir sonraki<br>favorin <span>burada.</span></h1>
+        <p>Unutulmaz klasiklerden yeni keşiflere… Ruh hâline en uygun animeyi bul ve kendi izleme yolculuğunu başlat.</p>
+        <a class="primary-button" href="#anime-listesi">Keşfetmeye başla <span>→</span></a>
+        <div class="hero-note"><span class="sparkle">✳</span><span><strong>Her türden hikâye</strong><br>Aksiyon, dram, macera ve daha fazlası</span></div>
+      </div>
+      <div class="hero-art" aria-label="Anime Atlas tanıtım illüstrasyonu" role="img">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="art-sun"></div><div class="art-mountain mountain-back"></div><div class="art-mountain mountain-front"></div>
+        <div class="art-cloud cloud-one"></div><div class="art-cloud cloud-two"></div>
+        <div class="art-caption"><span>HİKÂYENİ SEÇ</span><strong>Yeni dünyalar<br>seni bekliyor.</strong></div>
+        <div class="art-sticker">✦<small>ANİME<br>SEVGİSİ</small></div>
+      </div>
+    </section>
+
+    <section class="browse-section" id="anime-listesi">
+      <div class="section-heading">
+        <div><div class="eyebrow muted">SANA GÖRE BİR HİKÂYE</div><h2>Anime dünyasını keşfet</h2></div>
+        <p>Aradığın animeyi bulmak için<br>başlık, tür veya yıla göre ara.</p>
+      </div>
+      <div class="search-panel">
+        <label class="search-box"><span class="search-icon" aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Anime adı, tür veya yıl ara..." autocomplete="off"><kbd>⌘ K</kbd></label>
+        <label class="sort-control"><span>Sırala</span><select id="sortSelect" aria-label="Anime listesini sırala"><option value="popular">Öne çıkanlar</option><option value="az">İsim (A–Z)</option><option value="year">En yeni</option></select></label>
+      </div>
+      <div class="filter-row" id="filterRow" aria-label="Tür filtresi"></div>
+      <div class="results-bar"><span id="resultCount" aria-live="polite"></span><button id="clearFilters" class="clear-button" type="button">Filtreleri temizle <span>↺</span></button></div>
+      <div class="anime-grid" id="animeGrid"></div>
+      <div class="empty-state" id="emptyState" hidden><span>☁</span><h3>Bu aramada anime bulamadık</h3><p>Başka bir kelime deneyebilir veya filtreleri temizleyebilirsin.</p></div>
+      <p class="catalog-note">Liste, keşfetmeye başlamak için seçilmiş popüler ve klasik yapımlardan oluşur. Anime bilgileri tanıtım amaçlıdır.</p>
+    </section>
+
+    <section class="about-section" id="hakkimda">
+      <div class="about-art"><div class="about-circle">✿</div><div class="about-card"><span>MERHABA!</span><strong>Ben İda 👋</strong><small>Öğrenci · Hayal kurucu</small></div><span class="about-doodle doodle-a">✳</span><span class="about-doodle doodle-b">✦</span></div>
+      <div class="about-copy"><div class="eyebrow muted">BU SİTENİN ARKASINDAKİ KİŞİ</div><h2>Hakkımda</h2><p>Merhaba, ben İda; öğrenmeye ve kendimi geliştirmeye meraklı bir öğrenciyim. Boş zamanlarımda resim yapmayı ve renklerle yeni dünyalar kurmayı seviyorum. Anime Atlas’ı, animeye duyduğum ilgiyi yaratıcı tasarım sevgimle bir araya getirmek için hazırladım. Her ziyaretçinin burada kendine ilham veren yeni bir hikâye keşfetmesini umuyorum.</p><a class="text-link" href="#anasayfa">Yukarı dön <span>↑</span></a></div>
+    </section>
+  </main>
+  <footer><a class="brand footer-brand" href="#anasayfa"><span class="brand-mark">✦</span> anime<span>atlas</span></a><p>Anime keşfetmenin keyifli yolu.</p><span class="copyright">© 2026 Anime Atlas · İda tarafından tasarlandı</span></footer>
+</body>
+</html>
